@@ -12,7 +12,7 @@ def couleur_aleatoire():
 # Corps du programme
 sys.setrecursionlimit(10000)  # On repousse la limite des appels récursifs
 # Ouverture de l'image
-img = Image.open(wolf_3.png) # Le fichier image est alors 'mémorisé' dans la variable 'img'
+img = Image.open("wolf_3.png") # Le fichier image est alors 'mémorisé' dans la variable 'img'
 largeur, hauteur = img.size # On récupère les dimensions de l'image
 
 for y in range(hauteur):
