@@ -1,3 +1,7 @@
+from PIL import Image # Nous allons nous en servir pour accéder aux pixels
+import matplotlib.pyplot as plt # Utile ici pour afficher l'image
+import sys
+
 def couleur_aleatoire():
     """ Renvoie une couleur aleatoire au format (r,v,b)
     """
@@ -6,10 +10,9 @@ def couleur_aleatoire():
     return (alea,alea,alea)
 
 # Corps du programme
-# On récupère d'abord l'adresse d'une image sur Internet
-lien_url = "https://github.com/ebuonocore/NSIT_05_Recursivite/blob/main/e05d_coloriage/wolf_3.png?raw=true"
+sys.setrecursionlimit(10000)  # On repousse la limite des appels récursifs
 # Ouverture de l'image
-img = Image.open(urlopen(lien_url)) # Le fichier image est alors 'mémorisé' dans la variable 'img'
+img = Image.open(wolf_3.png) # Le fichier image est alors 'mémorisé' dans la variable 'img'
 largeur, hauteur = img.size # On récupère les dimensions de l'image
 
 for y in range(hauteur):
@@ -22,3 +25,4 @@ for y in range(hauteur):
 
 plt.rcParams['figure.figsize']=(8.0, 8.0)
 plt.imshow(img) # J'affiche l'image qui correspond à la variable 'img'
+plt.show()
